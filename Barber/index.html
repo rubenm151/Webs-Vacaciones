@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Barber</title>
+
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <!-- NAVBAR -->
+    <nav class="navbar fixed-top bg-body-tertiary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">
+          <img class="logo-nav" src="./Barber/logo-texto.png" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Offcanvas</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Dropdown
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li><hr class="dropdown-divider" /></li>
+                  <li>
+                    <a class="dropdown-item" href="#">Something else here</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex mt-3" role="search">
+              <input
+                class="form-control me-2"
+                type="search"
+                placeholder="Search"
+                aria-label="Search"
+              />
+              <button class="btn btn-outline-success" type="submit">
+                Search
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- SECTION1 -->
+    <section class="container-fluid section1">
+      <div class="row">
+        <div class="col-12">
+          <div class="text-section1">
+            <h1 class="fs-3"><strong>HEARS & BEARD</strong></h1>
+            <h1><strong>Welcome to the Barber Shop</strong></h1>
+            <button class="b-section1"><strong>BARBER SERVICE</strong></button>
+            <div class="f-logo2">
+              <img
+                class="logo2-section1"
+                src="../Barber/Barber/logo2.png"
+                alt=""
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- SECTION2 -->
+    <section class="container-xxl section2">
+      <div class="row">
+        <div class="col-sm-12 col-xl-4 p-5 mt-3">
+          <h2 class="h2-section2">WELCOME TO THE BOARD</h2>
+          <h1 class="fs-3"><strong>WE ARE BARBER SHOP</strong></h1>
+          <hr class="hr-section2" />
+          <p class="p-section2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias
+            porro provident, at amet sit sapiente quas iure obcaecati possimus
+            repellat quisquam neque beatae ducimus ut soluta necessitatibus sunt
+            fuga illo quidem sequi dolores quis architecto nisi voluptates!
+            Impedit eum, praesentium voluptatum minima modi veritatis vitae
+            ipsam quisquam veniam aliquid dolor recusandae, explicabo, tenetur
+            dicta esse sit sapiente sed? Quod, velit. <br />Lorem ipsum dolor
+            sit amet.
+          </p>
+          <button class="b-section2">READ MORE</button>
+        </div>
+        <div class="div-foto col-sm-12 col-md-6 col-xl-4 mt-5">
+          <img class="img-section2" src="./Barber/foto2.jpeg" alt="" />
+        </div>
+        <div class="div-texto col-sm-12 col-md-6 col-xl-4 mt-5">
+          <p class="tel-section2"><strong>+34 666444222</strong></p>
+          <h1 class="fs-3"><strong>WORKING HOURS</strong></h1>
+          <hr class="hr-section2" />
+          <p><strong>MON-THU</strong> 09:00 - 19:00</p>
+          <p><strong>SAT-SUN</strong> 10:00 16:00</p>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quibusdam
+            libero aut numquam ipsa aliquid reiciendis dolorum qui harum!
+          </p>
+          <hr class="hr-section2" />
+        </div>
+      </div>
+    </section>
+    <!-- SECTION3 -->
+    <div class="titulo-section3">
+      <h2 class="h2-section3 fs-5"><strong>PHOTO GALLERY</strong></h2>
+      <h1 class="fs-4"><strong>MAN & BOYS FULL SERVICE</strong></h1>
+    </div>
+
+    <section class="container-xxl section3">
+      <div class="galeria-section3">
+        <div class="row justify-content-center">
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <img src="./Barber/foto3.jpeg" alt="" />
+            <img src="./Barber/foto4.jpeg" alt="" />
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <img src="./Barber/foto5.jpeg" alt="" />
+            <img src="./Barber/foto6.jpeg" alt="" />
+          </div>
+          <div class="col-sm-12 col-md-6 col-xl-4">
+            <img src="./Barber/foto7.jpeg" alt="" />
+            <img src="./Barber/foto8.jpeg" alt="" />
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION4 -->
+    <section class="container-fluid section4">
+      <div class="titulo-section4">
+        <h2 class="h2-section3 fs-5"><strong>ABOUT THE BARBER SHOP</strong></h2>
+        <h1 class="fs-3"><strong>ENJOY YOUR HAIRCUT AGAIN</strong></h1>
+      </div>
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-xl-6 text-start p-5">
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempore
+          fugit numquam laborum architecto sed inventore aspernatur! Pariatur
+          quaerat perferendis tempore corporis quas iusto iste ut est?
+          Architecto, iure dolorem harum libero labore consectetur dicta alias
+          explicabo nemo assumenda laboriosam omnis at minus qui aut, voluptates
+          ullam, animi consequatur quod repellat maxime? Delectus eaque odio
+          atque, repellat aliquid numquam deserunt itaque blanditiis maxime odit
+          deleniti iste quaerat eligendi aperiam, dolores ea ab. Autem quod
+          dolorum architecto, inventore tempore sed beatae voluptatibus laborum,
+          maiores, corporis natus! Saepe alias praesentium eos aliquam cum eius
+          ratione at natus animi provident. Sit consectetur quo doloribus, modi
+          eveniet perferendis! Non commodi mollitia deleniti qui laborum rem
+          voluptas, doloribus quisquam odit sed odio alias laboriosam
+          laudantium, aperiam eius voluptates suscipit enim facilis architecto
+          perspiciatis animi, praesentium repudiandae? Tenetur nostrum velit eos
+          nisi totam impedit perspiciatis facere perferendis quisquam sapiente
+          nam vitae animi commodi dolorum, iure aliquid mollitia.
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-6 text-start p-5">
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ratione quam
+          quibusdam maiores. Id perspiciatis repellat ex officiis consectetur
+          minus totam quis cupiditate, vero amet. Architecto ullam reprehenderit
+          magni ea fugit possimus omnis, quos labore. Commodi distinctio eveniet
+          molestiae consequatur consequuntur qui omnis quasi, voluptates odit
+          dolore eligendi necessitatibus molestias dolor corrupti debitis
+          explicabo magnam quo ullam atque mollitia voluptatum, dolorum
+          pariatur. Rerum, maxime. Quis, sunt odit. Sint maiores ex sequi ea
+          dignissimos hic in doloremque, consectetur corporis placeat, sapiente
+          soluta eos aspernatur commodi excepturi labore facilis perferendis ad
+          voluptate veniam repellat veritatis quod itaque inventore?
+          Reprehenderit ex nemo ab accusantium quaerat, modi qui commodi quia
+          molestias a excepturi distinctio omnis cumque eveniet ducimus
+          voluptate illo facere, quae, voluptas ea. Ea ut nesciunt eius.
+          Cupiditate ipsam totam, sapiente impedit exercitationem cum quam
+          blanditiis, sit perferendis alias reprehenderit? Reiciendis, deserunt!
+          Atque, perferendis dolore molestias consequuntur eveniet eum.
+          Distinctio atque adipisci quibusdam tenetur.
+        </div>
+        <div class="flex-button">
+          <button class="text-wrap b-section4">RED MORE</button>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION5 -->
+    <section class="container-xxl section5">
+      <img class="f-9" src="./Barber/foto9.jpeg" alt="" />
+    </section>
+    <!-- SECTION6 -->
+    <section class="container-fluid section6">
+      <div class="row">
+        <div class="col-sm-12 col-md-6 col-xl-6">
+          <img src="../Barber/Barber/foto11.jpeg" alt="" />
+        </div>
+        <div class="col-sm-12 col-md-6 col-xl-6">
+          <h2 class="pt-5 h2-section6">LOOKING A BEAUTIFUL STYLE</h2>
+          <h1 class="fs-4">
+            <strong>WHAT ARE THE SECRETS OF THE HAIRCUT?</strong>
+          </h1>
+          <hr class="hr-section6" />
+          <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aliquid
+            quas quo commodi? Ea assumenda illo facere dolorum a placeat minima
+            iure inventore ab quas, laborum distinctio, sunt fuga ex
+            voluptatibus doloribus eveniet laudantium cumque pariatur eaque
+            nesciunt officiis impedit. Hic quas enim soluta vero tempore,
+            accusamus explicabo saepe dolorum adipisci.
+          </p>
+          <button class="b-section6">READ MORE</button>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION7 -->
+    <section class="container-fluid section7">
+      <div class="row">
+        <div class="titulo-section7 col-12">
+          <h2 class="h2-section7 fs-5">WE CAN MAKE YOUR AWESOMENESS</h2>
+          <h1 class="fs-4 mb-4"><strong>OUR BARBERS</strong></h1>
+        </div>
+        <div class="d-flex align-items-center justify-content-center barbers">
+          <div class="row">
+            <div class="col-sm-12 col-xl-4">
+              <div class="barber-portrait">
+                <img src="../Barber/Barber/foto11.jpeg" alt="" />
+                <h2 class="">BARBER</h2>
+                <h1 class="">FRED MORRISON</h1>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xl-4">
+              <div class="barber-portrait">
+                <img src="../Barber/Barber/foto12.jpeg" alt="" />
+                <h2 class="">BARBER</h2>
+                <h1 class="">ADRIAN SCOLD</h1>
+              </div>
+            </div>
+            <div class="col-sm-12 col-xl-4">
+              <div class="barber-portrait">
+                <img src="../Barber/Barber/foto13.jpeg" alt="" />
+                <h2 class="">BARBER</h2>
+                <h1 class="">ELMER BRIGGS</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SECTION8 -->
+    <section class="section8">
+      <div class="cuadro-section8">
+        <h1 class="h1-section8 text-white fs-3">
+          <strong>TESTIMONIALS</strong>
+        </h1>
+        <p class="text-wrap text-white">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident
+          incidunt quia dolor <br />
+          eaque veniam suscipit facere reprehenderit eligendi saepe dolores.
+        </p>
+      </div>
+    </section>
+    <!-- FOOTER -->
+    <footer>
+      <img class="logo-barber" src="./Barber/logo2.png" alt="" />
+      <div class="logos-footer">
+        <img src="../Socrart/styles/images/facebook.png" alt="" />
+        <img src="../Socrart/styles/images/twitter.png" alt="" />
+        <img src="../Socrart/styles/images/instagram.png" alt="" />
+        <img src="../Socrart/styles/images/logotipo-de-linkedin.png" alt="" />
+      </div>
+    </footer>
+  </body>
+</html>

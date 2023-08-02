@@ -1,0 +1,363 @@
+@font-face {
+  font-family: Barber;
+  src: url(../styles/Montserrat-VariableFont_wght.ttf);
+}
+h1,
+p,
+h2 {
+  font-family: Barber, sans-serif;
+}
+
+nav .logo-nav {
+  height: 3vh;
+  width: 6vw;
+}
+
+.section1 {
+  background-image: url("../Barber/foto1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+}
+.section1 .text-section1 {
+  text-align: end;
+  margin-top: 35vh;
+  margin-right: 13vw;
+  color: white;
+}
+.section1 .text-section1 .b-section1 {
+  background-color: #ae7b5b;
+  border: none;
+  padding: 15px;
+  color: white;
+}
+.section1 .f-logo2 {
+  display: flex;
+  justify-content: flex-start;
+  align-items: baseline;
+  position: relative;
+}
+.section1 .f-logo2 .logo2-section1 {
+  width: 12vw;
+  height: 20vh;
+  position: absolute;
+  margin-left: 22.5vw;
+  top: 20vh;
+  filter: brightness(0) invert(1);
+}
+
+.section2 {
+  background-color: #d7dbd6;
+}
+.section2 .h2-section2 {
+  color: #ae7b5b;
+  font-size: 20px;
+}
+.section2 .hr-section2 {
+  border: none;
+  border-top: 1px solid #ae7b5b;
+  width: 50%;
+  margin: 3vh auto;
+}
+.section2 .b-section2 {
+  background-color: #ae7b5b;
+  border: none;
+  padding: 15px;
+  color: white;
+}
+.section2 .tel-section2 {
+  color: #ae7b5b;
+  font-size: 18px;
+}
+.section2 .img-section2 {
+  height: 60vh;
+}
+
+.titulo-section3 {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.h2-section3 {
+  color: #ae7b5b;
+}
+
+.section3 .galeria-section3 {
+  display: flex;
+  flex-direction: row;
+}
+.section3 .galeria-section3 img {
+  height: 25vh;
+  width: 18vw;
+  margin-top: 2vh;
+  margin-bottom: 10vh;
+}
+
+.section4 {
+  background-color: #d7dbd6;
+  background-image: url("../Barber/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+}
+.section4 .titulo-section4 {
+  padding-top: 5vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section4 .flex-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section4 .flex-button .b-section4 {
+  color: white;
+  background-color: #ae7b5b;
+  height: 5vh;
+  width: 6vw;
+  border: none;
+  padding: 15px;
+}
+
+.section5 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section5 .f-9 {
+  height: 40vh;
+  width: 30vw;
+  padding-top: 5vh;
+}
+
+.section6 {
+  margin-top: 8vh;
+  background-color: #f8fbf6;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section6 img {
+  height: 45vh;
+  width: 35vw;
+  margin-left: 10vw;
+}
+.section6 .h2-section6 {
+  color: #ae7b5b;
+  font-size: 20px;
+}
+.section6 .hr-section6 {
+  border: none;
+  border-top: 1px solid #ae7b5b;
+  width: 50%;
+  margin: 3vh auto;
+}
+.section6 .b-section6 {
+  background-color: #ae7b5b;
+  border: none;
+  padding: 15px;
+  color: white;
+}
+
+.section7 {
+  background-color: #d7dbd6;
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section7 .titulo-section7 {
+  padding-top: 10vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section7 .h2-section7 {
+  color: #ae7b5b;
+  font-size: 20px;
+}
+.section7 .barber-portrait {
+  height: 45vh;
+  width: 15vw;
+  background-color: white;
+}
+.section7 .barbers img {
+  padding: 3vh;
+  height: 35vh;
+  width: 15vw;
+}
+.section7 .barbers h2 {
+  color: #ae7b5b;
+  font-size: 16px;
+  margin-left: 1.5vw;
+}
+.section7 .barbers h1 {
+  font-size: 18px;
+  margin-left: 1.5vw;
+}
+
+.section8 {
+  background-image: url(../Barber/foto15.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.section8 .cuadro-section8 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 65vw;
+  height: 40vh;
+  margin: 7vh 0 7vh 0;
+  border: 1px solid white;
+}
+.section8 .cuadro-section8 .simbolo-section8 {
+  font-size: 150px;
+  color: #ae7b5b;
+}
+
+footer {
+  background-color: black;
+  height: 30vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+footer .logo-barber {
+  height: 10vh;
+  width: 10vw;
+}
+footer .logos-footer {
+  margin-top: 2vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 35px;
+}
+footer .logos-footer img {
+  height: 2.5vh;
+  width: 3.5vh;
+  filter: invert(100%);
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  button {
+    width: 25vw !important;
+    height: 6vh !important;
+  }
+  nav .logo-nav {
+    width: 15vw;
+    margin-left: 10vw;
+  }
+  .section1 {
+    background-position: center;
+  }
+  .section1 .logo2-section1 {
+    width: 25vw !important;
+  }
+  .section3 .galeria-section3 img {
+    width: 45vw;
+    height: 40vh;
+    margin-left: 2vw;
+  }
+  .section4 {
+    height: 125vh;
+  }
+  .section7 {
+    height: 170vh;
+  }
+  .section7 .barber-portrait {
+    width: 68vw !important;
+    margin-left: 15vw;
+  }
+  .section7 .barber-portrait img {
+    width: 70vw !important;
+  }
+}
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  button {
+    width: 25vw !important;
+    height: 6vh !important;
+  }
+  nav .logo-nav {
+    height: 8vh;
+    width: 15vw;
+    margin-left: 10vw;
+  }
+  nav .navbar-toggler {
+    margin-right: 15vw;
+  }
+  .section1 .text-section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10vh;
+  }
+  .section1 .f-logo2 {
+    width: 55vw;
+    bottom: 15vh;
+  }
+  .section2 .div-foto {
+    margin-left: 25vw;
+  }
+  .section2 .div-texto {
+    margin-left: 2vw;
+    text-align: left;
+  }
+  .section3 img {
+    width: 70vw !important;
+    height: 80vh !important;
+    margin-left: 12vw;
+  }
+  .section4 {
+    height: 150vh;
+  }
+  .section6 {
+    height: 100vh;
+  }
+  .section6 img {
+    width: 70vw;
+  }
+  .section7 {
+    margin-top: 5vh;
+    height: 170vh;
+  }
+  .section7 .barber-portrait {
+    width: 45vw;
+    margin-left: 25vw;
+  }
+  .section7 .barber-portrait img {
+    width: 45vw;
+  }
+}/*# sourceMappingURL=style.css.map */

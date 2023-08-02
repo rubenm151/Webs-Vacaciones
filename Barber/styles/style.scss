@@ -1,0 +1,355 @@
+@use "../styles/variables" as v;
+@use "../styles/mixins" as m;
+
+@font-face {
+  font-family: Barber;
+  src: url(../styles/Montserrat-VariableFont_wght.ttf);
+}
+h1,
+p,
+h2 {
+  @include m.font-family-barber;
+}
+
+nav {
+  .logo-nav {
+    height: 3vh;
+    width: 6vw;
+  }
+}
+
+.section1 {
+  background-image: url("../Barber/foto1.jpeg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 100vh;
+
+  .text-section1 {
+    text-align: end;
+    margin-top: 35vh;
+    margin-right: 13vw;
+    color: v.$white;
+
+    .b-section1 {
+      @include m.b-section(v.$brown, v.$white);
+    }
+  }
+  .f-logo2 {
+    display: flex;
+    justify-content: flex-start;
+    align-items: baseline;
+    position: relative;
+
+    .logo2-section1 {
+      width: 12vw;
+      height: 20vh;
+      position: absolute;
+      margin-left: 22.5vw;
+      top: 20vh;
+
+      filter: brightness(0) invert(1);
+    }
+  }
+}
+
+.section2 {
+  background-color: v.$lightbrown;
+
+  .h2-section2 {
+    color: v.$brown;
+    font-size: 20px;
+  }
+
+  .hr-section2 {
+    @include m.hr-section(v.$brown);
+  }
+
+  .b-section2 {
+    @include m.b-section(v.$brown, v.$white);
+  }
+  .tel-section2 {
+    color: v.$brown;
+    font-size: 18px;
+  }
+  .img-section2 {
+    height: 60vh;
+  }
+}
+
+.titulo-section3 {
+  padding-top: 5vh;
+  padding-bottom: 3vh;
+  @include m.flex-container;
+}
+
+.h2-section3 {
+  color: v.$brown;
+}
+
+.section3 {
+  .galeria-section3 {
+    display: flex;
+    flex-direction: row;
+
+    img {
+      height: 25vh;
+      width: 18vw;
+      margin-top: 2vh;
+      margin-bottom: 10vh;
+    }
+  }
+}
+
+.section4 {
+  background-color: v.$lightbrown;
+  background-image: url("../Barber/logo.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 25%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+
+  .titulo-section4 {
+    padding-top: 5vh;
+    @include m.flex-container;
+  }
+  .flex-button {
+    @include m.flex-container;
+    .b-section4 {
+      color: v.$white;
+      background-color: v.$brown;
+      height: 5vh;
+      width: 6vw;
+      border: none;
+      padding: 15px;
+    }
+  }
+}
+
+.section5 {
+  @include m.flex-container;
+  .f-9 {
+    height: 40vh;
+    width: 30vw;
+    padding-top: 5vh;
+  }
+}
+
+.section6 {
+  margin-top: 8vh;
+  background-color: #f8fbf6;
+  height: 60vh;
+  @include m.flex-container;
+  img {
+    height: 45vh;
+    width: 35vw;
+    margin-left: 10vw;
+  }
+  .h2-section6 {
+    color: v.$brown;
+    font-size: 20px;
+  }
+
+  .hr-section6 {
+    @include m.hr-section(v.$brown);
+  }
+
+  .b-section6 {
+    @include m.b-section(v.$brown, v.$white);
+  }
+}
+
+.section7 {
+  background-color: #d7dbd6;
+  height: 70vh;
+  @include m.flex-container;
+  .titulo-section7 {
+    padding-top: 10vh;
+    @include m.flex-container;
+  }
+  .h2-section7 {
+    color: v.$brown;
+    font-size: 20px;
+  }
+  .barber-portrait {
+    height: 45vh;
+    width: 15vw;
+    background-color: v.$white;
+  }
+  .barbers {
+    img {
+      padding: 3vh;
+      height: 35vh;
+      width: 15vw;
+    }
+    h2 {
+      color: v.$brown;
+      font-size: 16px;
+      margin-left: 1.5vw;
+    }
+    h1 {
+      font-size: 18px;
+      margin-left: 1.5vw;
+    }
+  }
+}
+
+.section8 {
+  background-image: url(../Barber/foto15.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 40vh;
+  @include m.flex-container;
+  .cuadro-section8 {
+    @include m.flex-container;
+    width: 65vw;
+    height: 40vh;
+    margin: 7vh 0 7vh 0;
+    border: 1px solid v.$white;
+    .simbolo-section8 {
+      font-size: 150px;
+      color: v.$brown;
+    }
+  }
+}
+footer {
+  background-color: v.$black;
+  height: 30vh;
+  @include m.flex-container;
+  .logo-barber {
+    height: 10vh;
+    width: 10vw;
+  }
+  .logos-footer {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+
+    img {
+      height: 2.5vh;
+      width: 3.5vh;
+      filter: invert(100%);
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    overflow-x: hidden;
+  }
+  button {
+    width: 25vw !important;
+    height: 6vh !important;
+  }
+  nav {
+    .logo-nav {
+      width: 15vw;
+      margin-left: 10vw;
+    }
+  }
+  .section1 {
+    background-position: center;
+    .logo2-section1 {
+      width: 25vw !important;
+    }
+  }
+  .section3 {
+    .galeria-section3 {
+      img {
+        width: 45vw;
+        height: 40vh;
+        margin-left: 2vw;
+      }
+    }
+  }
+  .section4 {
+    height: 125vh;
+  }
+  .section7 {
+    height: 170vh;
+
+    .barber-portrait {
+      width: 68vw !important;
+      margin-left: 15vw;
+
+      img {
+        width: 70vw !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 576px) {
+  body {
+    overflow-x: hidden;
+  }
+  button {
+    width: 25vw !important;
+    height: 6vh !important;
+  }
+  nav {
+    .logo-nav {
+      height: 8vh;
+      width: 15vw;
+      margin-left: 10vw;
+    }
+    .navbar-toggler {
+      margin-right: 15vw;
+    }
+  }
+  .section1 {
+    .text-section1 {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 10vh;
+    }
+    .f-logo2 {
+      width: 55vw;
+      bottom: 15vh;
+    }
+  }
+  .section2 {
+    .div-foto {
+      margin-left: 25vw;
+    }
+    .div-texto {
+      margin-left: 2vw;
+      text-align: left;
+    }
+  }
+  .section3 {
+    img {
+      width: 70vw !important;
+      height: 80vh !important ;
+      margin-left: 12vw;
+    }
+  }
+  .section4 {
+    height: 150vh;
+  }
+  .section6 {
+    height: 100vh;
+    img {
+      width: 70vw;
+    }
+  }
+  .section7 {
+    margin-top: 5vh;
+    height: 170vh;
+    .barber-portrait {
+      width: 45vw;
+      margin-left: 25vw;
+      img {
+        width: 45vw;
+      }
+    }
+  }
+}

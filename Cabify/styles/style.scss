@@ -1,0 +1,264 @@
+@import "mixins";
+@import "variables";
+
+@font-face {
+  font-family: Cabify-Font;
+  src: url(../Poppins-Regular.ttf);
+}
+
+body {
+  overflow-x: hidden;
+}
+
+nav {
+  .nav-left {
+    margin-left: 30vh;
+  }
+  .nav-right {
+    margin-left: 20vw;
+  }
+  span {
+    margin-right: 1vw;
+    font-size: 1rem;
+  }
+  a {
+    font-family: Cabify-Font;
+    color: $color-secondary !important;
+    text-decoration: none;
+  }
+}
+
+.section1 {
+  margin-top: 3vh;
+  h1 {
+    font-size: 3.125rem;
+    font-weight: bold;
+  }
+  h4 {
+    font-size: 20px;
+  }
+  a {
+    text-decoration: none;
+  }
+  img {
+    width: 40vw;
+    height: auto;
+  }
+  .content-section1 {
+    @include h2;
+  }
+
+  .b-section1 {
+    @include button;
+  }
+  .a-section1 {
+    color: $color-accent;
+    font-size: 1.25rem;
+  }
+}
+
+.section2 {
+  background-color: $color-background;
+  height: 100vh;
+  margin-top: 3vh;
+  img {
+    height: 35px;
+  }
+  h2 {
+    @include h2;
+    font-weight: bold;
+    font-size: 1.5rem;
+    margin-left: 0.8vw;
+  }
+  p {
+    font-family: Cabify-Font;
+    color: $color-text;
+    margin-bottom: 4.5vh;
+    margin-left: 3.5vw;
+  }
+  .title-section2 {
+    color: $color-text-light;
+    font-weight: bold;
+    margin-top: 5vh;
+  }
+  .img-section2 {
+    margin-top: 10vh;
+    width: 30vw;
+    height: 75vh;
+  }
+
+  .image-with-text {
+    display: flex;
+    align-items: center;
+
+    img {
+      margin-right: 10px;
+    }
+  }
+  .logo-download {
+    width: 15vw;
+    height: 5vh;
+    margin-left: 3vw;
+  }
+  .a-section2 {
+    color: #44307a;
+  }
+}
+
+.section3 {
+  margin-top: 8vh;
+  img {
+    width: 35vw;
+    height: 45vh;
+  }
+  h2 {
+    @include h2;
+    font-weight: bold;
+  }
+  p {
+    @include h2;
+    font-size: 1.125rem;
+  }
+  .title-section3 {
+    color: $color-text-light;
+    font-weight: bold;
+  }
+  .a-section3 {
+    color: $color-accent;
+    font-weight: bold;
+  }
+}
+.section4 {
+  margin-top: 15vh;
+  h2 {
+    @include h2;
+    font-weight: bold;
+    font-size: 2rem;
+    margin-bottom: 2vh;
+  }
+  p {
+    font-family: Cabify-Font;
+    color: $color-text;
+    font-size: 1.13rem;
+    margin-bottom: 4vh;
+    font-weight: bold;
+  }
+}
+.section5 {
+  margin-bottom: 12vh;
+  h4,
+  p {
+    @include h2;
+    font-weight: bold;
+  }
+}
+footer {
+  height: 100vh;
+  background-color: $color-footer;
+  .text-footer {
+    margin-top: 15vh;
+    h2 {
+      color: white;
+      font-weight: bold;
+      margin-bottom: 3vh;
+    }
+    p {
+      color: $color-footer-p;
+      font-size: 1.3rem;
+      font-weight: bold;
+    }
+    button {
+      @include button($color-secondary);
+    }
+  }
+  .lists-footer {
+    .list {
+      margin-top: 8vh;
+      list-style-type: none;
+      padding: 0;
+      .list-title {
+        color: $color-footer-p;
+        font-weight: bold;
+        margin-bottom: 1.5vh;
+      }
+      li {
+        color: white;
+        margin-bottom: 1.5vh;
+        font-weight: bold;
+      }
+    }
+    .logo-download {
+      width: 14vw;
+    }
+  }
+  .under-footer {
+    margin-top: 5vh;
+    .t-under-footer {
+      color: $color-text-light;
+      font-weight: bold;
+    }
+    .logos-footer {
+      img {
+        margin-right: 20px;
+        width: 20px;
+        filter: invert(1);
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+}
+
+@media (max-width: 576px) {
+  nav {
+    margin-left: 50vw;
+  }
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .b-section1 {
+      width: 90vw;
+    }
+    img {
+      margin-top: 3vh;
+      width: 90vw;
+    }
+  }
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: 2.5vw;
+    background-color: white;
+    .img-section2 {
+      margin-top: 75vh;
+      margin-right: 2vw;
+      width: 100vw;
+    }
+    .logo-download {
+      visibility: hidden;
+    }
+  }
+  .section3 {
+    margin-top: 60vh;
+    img {
+      width: 100vw;
+    }
+  }
+  footer {
+    height: 100%;
+
+    .text-footer {
+      button {
+        width: 90vw;
+      }
+    }
+    .logo-download {
+      width: 60vw !important;
+    }
+  }
+}

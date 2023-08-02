@@ -1,0 +1,13 @@
+@mixin button($background-color: $color-accent) {
+  width: 12vw;
+  background-color: $background-color;
+  border-radius: 12px;
+  height: 6vh;
+  font-weight: 700;
+  color: white;
+  border: none;
+}
+@mixin h2 {
+  font-family: Cabify-Font;
+  color: $color-secondary;
+}

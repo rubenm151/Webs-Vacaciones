@@ -1,0 +1,11 @@
+@use "./variables";
+
+@mixin boton-amarillo {
+  border: none;
+  color: white;
+  background-color: $yellow;
+  border-radius: 10%;
+  width: 8vw;
+  height: 3.5vh;
+  margin-right: 0.5vw;
+}

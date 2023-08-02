@@ -1,0 +1,33 @@
+// mixins.scss
+@use "./variables" as v;
+// _mixins.scss
+@mixin b-section($brown, $white: #ffffff) {
+  background-color: $brown;
+  border: none;
+  padding: 15px;
+  color: $white;
+}
+@mixin font-family-barber {
+  font-family: Barber, sans-serif;
+}
+
+@mixin hr-section($brown) {
+  border: none;
+  height: 0.3vh;
+  background-color: $brown;
+  width: 5vw;
+}
+
+@mixin flex-container($justify-content: center) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: $justify-content;
+}
+
+@mixin hr-section($color) {
+  border: none;
+  border-top: 1px solid $color;
+  width: 50%;
+  margin: 3vh auto;
+}
